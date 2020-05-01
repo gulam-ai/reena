@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lato&family=Quicksand&family=Roboto&display=swap');
+
+:root{
+    --primary-color: #ff69b4; 
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+h1{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    opacity: 0.7;
+    font-family: 'Sail', cursive;
+}
+
+
+h4{
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    font-family: 'Sniglet', cursive;
+    line-height: 1.4;
+}
+
+.showcase{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #daa52d;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--primary-color) url('./cover.jpeg') no-repeat center center/cover;
+}
+
+.video-container video{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
+
+.video-container:after{
+    content: 'Rina ---> Super Girl';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.content{
+    z-index: 1;
+}
+
+.btn{
+    padding: 10px 30px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    margin-top: 25px;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active{
+    transform: scale(1.2);
+}
+
+#about{
+    padding: 40px;
+    text-align: center;
+}
+
+#about p{
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+#about h2{
+    margin: 30px 0px;
+    color: var(--primary-color);
+    font-family: 'Sniglet', cursive;
+    letter-spacing: 2.0px;
+    line-height: normal;
+}
+
+.social a{
+    margin: 2px 5px;
+
+}
+
+/* .social a {
+     border-left: #000000 3px dotted;
+     margin-left: auto;
+     
+} */
